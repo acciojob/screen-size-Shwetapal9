@@ -4,7 +4,7 @@ screensize.id= "sizeInfo";
 const expectedWidth =window.innerWidth;
 const expectedHeight=  window.innerHeight;
 screensize.innerText = `Width: ${expectedWidth} and Height: ${expectedHeight}`;
-document.body.append(sizeInfo);
+document.body.append(screensize);
 
 window.onresize= function(){
 	
