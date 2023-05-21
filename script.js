@@ -1,10 +1,12 @@
 //your JS code here. If required.
-const sizeInfo = document.createElement("h1");
-sizeInfo.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+const sizeInfo = document.getElementbyId("h1");
+const expectedWidth =window.innerWidth;
+const expectedHeight=  window.innerHeight;
+sizeInfo.innerText = `Width: ${expectedWidth} and Height: ${expectedHeight}`;
 document.body.append(sizeInfo);
 
 window.onresize= function(){
 	
-	sizeInfo.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+	sizeInfo.innerText = `Width: ${expectedWidth} and Height: ${expectedHeight}`;
 	// document.body.append(sizeElement);
 }
